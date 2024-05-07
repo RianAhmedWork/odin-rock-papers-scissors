@@ -9,6 +9,19 @@
 <body>
   <script>
     console.log("Hello World!");
+
+    function getComputerChoice() {
+      const rng = Math.floor(Math.random() * 100);
+      if (rng % 3 === 0) {
+        return "rock";
+      }
+      else if (rng % 3 === 1) {
+        return "paper";
+      }
+      else {
+        return "scissors"
+      }
+    }
   </script>
 </body>
 
