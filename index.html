@@ -30,6 +30,36 @@
       const userChoice = prompt("Enter your choice here");
       console.log(userChoice);
     }
+
+    const humanScore = 0;
+    const computerScore = 0;
+
+    // function that plays a single round
+    function playRound(humanChoice, computerChoice) {
+      const humanSelection = humanChoice.toLowerCase();
+      if (humanSelection === computerChoice) {
+        console.log("Same selection! Its a Draw.");
+      } else if (humanSelection === "rock" && computerChoice === "paper") {
+        console.log("You lose! Paper beats Rock.");
+      } else if (humanSelection === "rock" && computerChoice === "scissors") {
+        console.log("You win! Rock beats Scissors.");
+      } else if (humanSelection === "paper" && computerChoice === "scissors") {
+        console.log("You lose! Scissors beats Paper.");
+      } else if (humanSelection === "paper" && computerChoice === "rock") {
+        console.log("You win! Paper beats Rock.");
+      } else if (humanSelection === "scissors" && computerChoice === "rock") {
+        console.log("You lose! Rock beats Scissors.");
+      } else {
+        console.log("You win! Scissors beats Paper");
+      }
+    }
+
+    // function that plays a round of rps
+    // GET humanChoice and computerChoice
+    // SET humanChoice to be case insensitive
+    // IF humanChoice is equal to computerChoice then its a draw
+    // OTHERWISE continue with normal rps rules
+    // WRITE out the result of the game in a string
   </script>
 </body>
 
